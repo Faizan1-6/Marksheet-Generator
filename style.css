@@ -1,0 +1,27 @@
+.marksheet {
+  background: #f3f4f6;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.marksheet h3 {
+  color: #6b21a8;
+  margin-bottom: 10px;
+}
+
+.pass {
+  color: green;
+  font-weight: bold;
+}
+
+.fail {
+  color: red;
+  font-weight: bold;
+}
+
+.not-found {
+  color: red;
+  font-weight: bold;
+}

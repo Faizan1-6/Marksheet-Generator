@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marksheet Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 min-h-screen flex items-center justify-center p-4">
+
+  <div class="bg-white p-6 rounded-2xl shadow-2xl w-full max-w-3xl">
+    <h1 class="text-3xl font-bold text-center mb-6 text-purple-700">Marksheet Generator</h1>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+      <div>
+        <label class="block font-semibold">Student Name</label>
+        <input type="text" id="name" class="border rounded-md p-2 w-full" />
+      </div>
+      <div>
+        <label class="block font-semibold">Father Name</label>
+        <input type="text" id="fatherName" class="border rounded-md p-2 w-full" />
+      </div>
+      <div>
+        <label class="block font-semibold">Roll Number</label>
+        <input type="text" id="rollNumber" class="border rounded-md p-2 w-full" />
+      </div>
+      <div>
+        <label class="block font-semibold">School Name</label>
+        <input type="text" id="schoolName" class="border rounded-md p-2 w-full" />
+      </div>
+    </div>
+
+    <button onclick="showMarksheet()" class="mt-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg w-full font-semibold">Show Marksheet</button>
+
+    <div id="output" class="mt-6 space-y-5"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
